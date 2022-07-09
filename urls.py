@@ -1,9 +1,10 @@
+from django.contrib import admin
 from django.urls import path, include
-from . import views
 
 urlpatterns = [
-    path('signup/', views.signup, name='signup'),
-    path('login/', views.login, name='login'),
-    path('phonedownload/', views.phoneDownload, name='phonedownload'),
-    path('logout/', views.logout, name='logout'),
+    path('admin/', admin.site.urls),
+    path('', include('mainsite.urls')),
+    path('auth/', include('usermgmt.urls')),
+    path('transactions/', include('transactions.urls')),
+    path('phoneservice/', include('phoneservice.urls')),
 ]
