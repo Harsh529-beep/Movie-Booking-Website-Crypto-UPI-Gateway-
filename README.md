@@ -21,3 +21,4 @@ Flow to break project:
 19. style.css
 20. style1.css
 21. success.html
+The project is based on booking movie tickets using 2 payment gateways: Crypto and UPI / Bank Tranfer / Credit Card.
